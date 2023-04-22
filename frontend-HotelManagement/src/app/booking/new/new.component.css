@@ -1,0 +1,16 @@
+
+.container{
+    margin-top:40px;
+}
+mat-card{
+    width:900px;
+    margin:30px auto;
+    display:block;
+}
+.hotelname{
+    font-size:20px;
+}
+.bookbtn{
+    background-color:lightblue;
+}
+

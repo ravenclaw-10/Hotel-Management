@@ -1,0 +1,39 @@
+<!-- <div class="container two" routerLinkActive="active">
+  <button class="btnn" routerLink="../booking/new">New Booking</button>    
+</div> -->
+<!-- <h1>Booking component</h1> -->
+
+<div class="container" >
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Hotel Name</th>
+      <th>Name of person</th>
+      <th>Age</th>
+      <th>Check-in Date</th>
+      <th>Check-out Date</th>
+      <th>Phone no.</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let bookings of booking">
+      <td><span>{{bookings.id}}</span></td>
+      <td><span>{{bookings.hotelname}}</span></td>
+      <td><span>{{bookings.name}}</span></td>
+      <td><span>{{bookings.age}}</span></td>
+      <td><span>{{getdate(bookings.checkindate)| date:'yyyy-MM-dd'}}</span></td>
+      <td><span>{{getdate(bookings.checkoutdate)| date:'yyyy-MM-dd'}}</span></td>
+      <td><span>{{bookings.phone}}</span></td>
+      <!-- <td class="ubb"><button class="del" [class.changestyle]="check" (click)=confirmation(bookings) mat-raised-button color="warn">Delete</button></td> -->
+
+      <div *ngIf="condition(bookings.checkindate); else elseBlock">
+        <td class="ubb"><button class="del" (click)=del(bookings) mat-raised-button color="warn">Delete</button></td>
+      </div>
+      <ng-template #elseBlock>
+        <td class="ubb"><button class="changestyle" mat-raised-button color="warn">Completed</button></td>
+      </ng-template>
+    </tr>
+    </tbody>
+  </table>
+</div>

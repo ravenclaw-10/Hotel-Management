@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-header>
+        <h2>Enter Hotel details</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="addhotel" (ngSubmit)="adding()">
+        
+            <mat-form-field class="example-full-width">
+                <mat-label>Hotel Name:</mat-label>
+                <input matInput formControlName="hotelname" >
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Rating</mat-label>
+                <input type="text" matInput formControlName="rating" >
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Location</mat-label>
+                <input type="text" matInput formControlName="location" >
+              </mat-form-field>
+              <!-- <mat-form-field class="example-full-width">
+                <mat-label>Room Available</mat-label>
+                <input type="number" matInput formControlName="roomavail" >
+              </mat-form-field> -->
+              <mat-form-field class="example-full-width">
+                <mat-label>Price</mat-label>
+                <input type="number" matInput formControlName="price" >
+              </mat-form-field>
+              <div>
+                <button mat-raised-button color="primary" class="btnn" (click)="adding()">Add</button>
+              </div>
+          </form>
+    </mat-card-content>
+  </mat-card>

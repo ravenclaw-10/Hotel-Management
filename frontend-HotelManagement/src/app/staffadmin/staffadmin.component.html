@@ -1,0 +1,36 @@
+<h1>Staff Details</h1>
+<div>
+    <nav class="navbar navbar-fixed-top navbar-static-top" style="display:block;">
+      <div class="container">
+          <a class="navbar-brand navbar-link" routerLinkActive="active" routerLink="/admin">Hotel Management Admin portal</a>
+          <ul class="nav navbar-nav" routerLinkActive="active">
+              <li class="nav-item"><a class="nav-link" routerLink="../bookingadmin">Booking</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="../staffadmin" >Staff Details</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="../hoteladmin" >Hotels</a></li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Phone</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let staffs of staff">
+        <td><span>{{staffs.id}}</span></td>
+        <td><span>{{staffs.Name}}</span></td>
+        <td><span>{{staffs.Designation}}</span></td>
+        <td><span>{{staffs.Phone}}</span></td>
+        <button (click)=edit(staffs)>Edit</button>
+        <button (click)=del(staffs)>Delete</button>
+        <button (click)=add(staffs)>Add</button>
+      </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,25 @@
+nav{
+    background-color:rgb(130, 227, 231);
+    padding:20px;
+    font-size: large;
+    font-style: italic;
+}
+
+.navbar-brand{
+    font-size: larger;
+    font-weight: 550;
+}
+
+table{
+    background-color:white;
+}
+
+.edit{
+    margin:0px 5px;
+}
+
+.addhotel{
+    display:block;
+    margin:30px auto;
+    width:20%;
+}

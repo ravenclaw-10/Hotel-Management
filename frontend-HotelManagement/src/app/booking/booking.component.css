@@ -1,0 +1,41 @@
+
+.form-control{
+    width:50%;
+}
+form{
+    margin:50px;
+}
+
+.btnn{
+    /* margin:20px;
+    width:400px; */
+    padding:10px;
+}
+.two{
+    display:block;
+    width:20%;
+    margin:70px auto 10px auto;
+}
+
+mat-dialog-container{
+    padding:0px;
+}
+
+.table{
+    background-color:white;
+    margin-top:20px;
+}
+
+.ubb{
+    padding:2px;
+}
+.del{
+    margin:2px;
+    width:100px;
+}
+
+.changestyle{
+    background-color:lightgrey;
+    color:grey;
+    margin:2px;
+}

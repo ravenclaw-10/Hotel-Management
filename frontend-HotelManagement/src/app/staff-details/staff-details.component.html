@@ -1,0 +1,19 @@
+<!-- <h1>staff-details works!</h1> -->
+<div class="container">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Phone</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let staffs of staff">
+        <td><span>{{staffs.Name}}</span></td>
+        <td><span>{{staffs.Designation}}</span></td>
+        <td><span>{{staffs.Phone}}</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>

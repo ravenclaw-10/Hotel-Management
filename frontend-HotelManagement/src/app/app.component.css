@@ -1,0 +1,31 @@
+body{
+    background-image:url('../assets/the-palm-3840x2160-atlantis-dubai-hotel-6k-19258.jpg');
+    color:rgb(0, 0, 0);
+}
+
+li,a{
+    color:rgb(6, 0, 129);
+    font-size:2.0rem;
+    font-style: italic;
+}
+.navbar-brand{
+    font-weight:bolder;
+    font-size:2.5rem;
+}
+
+.navbar{
+    background-color:rgb(164, 214, 255);
+    display:block;
+}
+nav{
+    display:block;
+    padding:20px;
+}
+
+.imge{
+    width:100%;
+}
+
+h1{
+    margin-bottom:60px;
+}

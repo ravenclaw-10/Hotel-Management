@@ -1,0 +1,39 @@
+
+<div>
+    <nav class="navbar navbar-fixed-top navbar-static-top" style="display:block;">
+      <div class="container">
+          <a class="navbar-brand navbar-link" routerLinkActive="active" routerLink="/admin">Hotel Management Admin portal</a>
+          <ul class="nav navbar-nav" routerLinkActive="active">
+              <li class="nav-item"><a class="nav-link" routerLink="../bookingadmin">Booking</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="../hoteladmin" >Hotels</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/" (click)="logout()">Logout</a></li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+
+  <span class="addhotel"><button (click)=add() mat-raised-button color="accent">Add a Hotel</button></span>
+<div class="container">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Hotel Name</th>
+        <th>Rating</th>
+        <th>Location</th>
+        <th>Price</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let hotelsL of hotellist">
+        <td><span>{{hotelsL.hotelname}}</span></td>
+        <td><span>{{hotelsL.rating}}</span></td>
+        <td><span>{{hotelsL.location}}</span></td>
+        <td><span>{{hotelsL.price}}</span></td>
+        <td>
+          <span><button class="edit" (click)=edit(hotelsL) mat-raised-button color="primary">Edit</button></span>
+        <span><button class="edit" (click)=del(hotelsL) mat-raised-button color="warn">Delete</button></span>
+      </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>

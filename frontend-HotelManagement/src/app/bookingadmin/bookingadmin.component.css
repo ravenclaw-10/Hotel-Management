@@ -1,0 +1,21 @@
+.table{
+    background-color:white;
+}
+nav{
+    background-color:rgb(130, 227, 231);
+    padding:20px;
+    font-size: large;
+    font-style: italic;
+}
+
+.navbar-brand{
+    font-size: larger;
+    font-weight: 550;
+}
+.edit{
+    margin: 1px 2px;
+}
+
+.btndata{
+    width:30%;
+}

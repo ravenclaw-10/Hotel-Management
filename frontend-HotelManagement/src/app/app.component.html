@@ -1,0 +1,16 @@
+<h1>Hotel Management</h1>
+<div *ngIf="isMenuVisible">
+  <nav class="navbar navbar-fixed-top navbar-static-top" style="display:block;">
+    <div class="container">
+        <a class="navbar-brand navbar-link" routerLinkActive="active" routerLink="../home">Hotel Management Site</a>
+        <ul class="nav navbar-nav" routerLinkActive="active">
+            <li class="nav-item"><a class="nav-link" routerLink="../booking/new">New Booking</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="../booking">Previous Booking</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" routerLink="../staff" >Staff Details</a></li> -->
+            <li class="nav-item"><a class="nav-link" routerLink="about">About</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/" (click)="logout()">Logout</a></li>
+        </ul>
+    </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>

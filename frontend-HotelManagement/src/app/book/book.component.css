@@ -1,0 +1,13 @@
+mat-form-field, mat-radio-group{
+    display:block;
+    
+}
+
+mat-radio-button, .btnn{
+    margin:20px;
+}
+
+h2, .btnn{
+    display:block;
+    margin: 0px auto 20px auto;
+}

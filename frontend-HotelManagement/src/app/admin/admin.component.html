@@ -1,0 +1,15 @@
+<div>
+    <nav class="navbar navbar-fixed-top navbar-static-top" style="display:block;">
+      <div class="container">
+          <a class="navbar-brand navbar-link" routerLinkActive="active" routerLink="/admin">Hotel Management Admin portal</a>
+          <ul class="nav navbar-nav" routerLinkActive="active">
+              <li class="nav-item"><a class="nav-link" routerLink="../bookingadmin">Booking</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" routerLink="../hoteladmin/addhotel" >Add Hotel</a></li> -->
+              <li class="nav-item"><a class="nav-link" routerLink="../hoteladmin" >Hotels</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/" (click)="logout()">Logout</a></li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
+  

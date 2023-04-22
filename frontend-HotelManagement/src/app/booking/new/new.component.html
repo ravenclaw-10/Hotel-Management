@@ -1,0 +1,11 @@
+<div *ngFor="let hotelsL of hotellist" class="hotels">
+  <mat-card>
+    <mat-card-content><strong><span class="hotelname">{{hotelsL.hotelname}}</span></strong></mat-card-content>
+    <mat-card-content><strong><span>Rating: {{hotelsL.rating}}</span></strong></mat-card-content>
+    <mat-card-content><strong><span>Location: {{hotelsL.location}}</span></strong></mat-card-content>
+    <mat-card-content><strong><span>Price: Rs {{hotelsL.price}}</span></strong></mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button class="bookbtn" (click)="openModal(hotelsL)">Book</button>
+    </mat-card-actions>  
+  </mat-card>
+</div>

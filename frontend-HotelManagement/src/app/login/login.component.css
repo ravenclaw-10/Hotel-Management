@@ -1,0 +1,16 @@
+mat-form-field{
+    display:block;
+}
+mat-card{
+    width:50%;
+    display:block;
+    margin:80px auto;
+}
+
+.btnn{
+    margin:20px;
+}
+
+body{
+    background-image:url('../../assets/the-palm-3840x2160-atlantis-dubai-hotel-6k-19258.jpg');
+}
